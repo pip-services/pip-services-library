@@ -26,6 +26,8 @@ and so on
 It keeps system-wide configuration settings split by sections.
 - [pip-services-statistics](https://github.com/pip-services-infrastructure/pip-services-statistics-node) - Statistics microservice. 
 It aggregates business statistics within Hour, Day, Month, Year and Total intervals.
+- [pip-services-metrics](https://github.com/pip-services-infrastructure/pip-services-metrics-node) - Metrics microservice. 
+Yet another analytical service that collect business metrics/statistics within Hour, Day, Month, Year and Total intervals with ability to break them down into multiple dimensions.
 - [pip-services-blobs](https://github.com/pip-services-infrastructure/pip-services-blobs-node) - Blob storage microservice. 
 It is the key microservice that enables upload and download of binary blobs. It also tracks references from other system entities and destroys files when the last reference is released.
 - [pip-services-facets](https://github.com/pip-services-infrastructure/pip-services-facets-node) - Faceted search microservice. 
@@ -34,6 +36,10 @@ It records and allows to search by aggregated (faceted) criteria, like groups, t
 It trackes changes in specific scope down to individual elements. That helps to use simple pulls to detect changes in one call without use of asynchronous update messages.
 - [pip-services-email](https://github.com/pip-services-infrastructure/pip-services-email-node) - Email delivery microservice. It sends email messages and supports message templates.
 - [pip-services-sms](https://github.com/pip-services-infrastructure/pip-services-sms-node) - SMS delivery microservice. It sends sms messages and supports message templates.
+- [pip-services-clusters](https://github.com/pip-services-infrastructure/pip-services-clusters-node) - Clusters microservice. 
+It keeps records of all computational and data clusters of a system and defines where tenant data and logic are located. This microservice is handy to implement partitioning of data or/and processes to achieve horizontal scalability.
+- [pip-services-jobs](https://github.com/pip-services-infrastructure/pip-services-jobs-node) - Jobs queue microservice. 
+It allows to schedule and distribute computational jobs among worker services.
 
 ### User management microservices
 - [pip-services-accounts](https://github.com/pip-services-users/pip-services-accounts-node) - Users account management microservice. 
@@ -55,6 +61,12 @@ in client facades (API gateways).
 - [pip-services-activities](https://github.com/pip-services-users/pip-services-activities-node) - User/party activity logging microservice. 
 It logs activities performed by user (or party) like registering and logging into the system, changing configuration settings, 
 creating/removing/updating system entities and so on.
+- [pip-services-organizations](https://github.com/pip-services-users/pip-services-organizations-node) - Organizations management microservice. 
+It keeps track of organizations registered in a system.
+- [pip-services-orgroles](https://github.com/pip-services-users/pip-services-orgroles-node) - Organizational roles microservice. 
+It manages user roles in relation to organization access rights.
+- [pip-services-invitations](https://github.com/pip-services-users/pip-services-invitations-node) - User invitation microservice. 
+It sends out and manages invitations to new users and allows to grant them access to organizations where they were invited to.
 
 ### Product support microservices
 
@@ -86,6 +98,11 @@ It allows content managers to compose message templates in multiple languages an
 - [pip-services-dashboards](https://github.com/pip-services-content/pip-services-dashboards-node) - Dashboards microservice. 
 It stores configurations of user dashboards.
 
+### eCommerce microservices
+
+- [pip-services-creditcards](https://github.com/pip-services-ecommerce/pip-services-creditcards-node) - Credit cards microservice. 
+It stores customer credit cards in trusted places like PayPal.
+
 ## Quick Links
 
 - [Pip.Services microservices toolkit](http://github.com/pip-services/pip-services)
@@ -109,3 +126,5 @@ We also would like to recognize help received from the following companies.
 - [**BootBarn**](http://www.bootbarn.com)
 - [**EPAM**](http://www.epam.com)
 - [**Kyrio**](http://www.kyrio.com)
+- [**MST Global**](http://www.mstglobal.com)
+- [**IQuipsys Inc.**](http://www.iquipsys.com)
